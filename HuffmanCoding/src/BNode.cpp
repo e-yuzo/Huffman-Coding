@@ -23,8 +23,7 @@ void BNode::setValue(char c)
 
 void BNode::setValue(int n)
 {
-    vector<string> oi;
-    oi.
+
 }
 
 int BNode::getValueN()
@@ -51,3 +50,4 @@ void BNode::writeFile()
 {
 
 }
+
