@@ -1,7 +1,7 @@
 #include "BNode.h"
 #
 
-BNode::BNode()djnsdnjcdkn
+BNode::BNode()
 {
     //ctor
 }
