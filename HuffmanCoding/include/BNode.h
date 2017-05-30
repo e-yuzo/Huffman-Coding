@@ -27,7 +27,7 @@ class BNode
 
         bool leaf; //verifica se é folha
 
-        void caractereCount(); //define frequência
+        void caractereFrequency(); //define frequência
         void readFile(); //lê arquivo
         void writeFile(); //escreve no arquivo
 };

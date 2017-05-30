@@ -36,8 +36,10 @@ char BNode::getValueC()
 
 }
 
-void BNode::caractereCount()
-{wewedweweed
+void BNode::caractereFrequency()
+{
+    int* [128];
+
 
 }
 
