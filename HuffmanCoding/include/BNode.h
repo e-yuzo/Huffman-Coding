@@ -15,6 +15,7 @@ class BNode
         char getValueC();
 
         virtual ~BNode();
+        void compress(string str);
     protected:
 
     private:
