@@ -37,7 +37,7 @@ char BNode::getValueC()
 }
 
 void BNode::caractereCount()
-{
+{wewedweweed
 
 }
 
@@ -47,6 +47,16 @@ void BNode::readFile()
 }
 
 void BNode::writeFile()
+{
+
+}
+
+BNode::BNode()
+{
+
+}
+
+void BNode::compress(string str)
 {
 
 }
