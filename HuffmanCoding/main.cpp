@@ -1,9 +1,9 @@
-#include <iostream>
 
+#include "BTree.h"
 using namespace std;
-
-int main()
-{
-    cout << "Hello world!" << endl;
-    return 0;
+int main() {
+string str="Funciona,eu acho!";
+BTree *t=new BTree();
+t->compact(str);
+return 0;
 }

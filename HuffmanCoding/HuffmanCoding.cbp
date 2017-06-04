@@ -35,8 +35,10 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/BNode.h" />
+		<Unit filename="include/BTree.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/BNode.cpp" />
+		<Unit filename="src/BTree.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

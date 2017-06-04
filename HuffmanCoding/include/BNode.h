@@ -1,35 +1,29 @@
 #ifndef BNODE_H
 #define BNODE_H
-
-
+#include <iostream>
+using namespace std;
 class BNode
 {
     public:
         BNode();
-        BNode(bool leaf); //set atributo que verifica se é folha
-
-        void setValue(char c);
-        void setValue(int n);
-
-        int getValueN();
-        char getValueC();
-
+        BNode(int fr,char ch);
+        BNode(int fr);
         virtual ~BNode();
-        void compress(string str);
+         BNode* getLeft();
+         BNode* getRight();
+         void setLeft(BNode* node);
+         void setRight(BNode* node);
+         void setFr(int fr);
+         void setCh(char ch);
+         char getCh();
+         int getFr();
+         bool isLeaf();
     protected:
-
     private:
         BNode* left;
         BNode* right;
-
-        char c;
-        int n;
-
-        bool leaf; //verifica se é folha
-
-        void caractereFrequency(); //define frequência
-        void readFile(); //lê arquivo
-        void writeFile(); //escreve no arquivo
+        char ch;
+        int fr;
 };
 
 #endif // BNODE_H

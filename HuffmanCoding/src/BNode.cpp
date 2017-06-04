@@ -1,65 +1,71 @@
 #include "BNode.h"
-#
 
 BNode::BNode()
 {
-    //ctor
+    left=NULL;
+    right=NULL;
+}
+BNode::BNode(int fr,char ch)
+{
+    this->fr=fr;
+    this->ch=ch;
+    left=NULL;
+    right=NULL;
+}
+BNode::BNode(int fr)
+{
+    this->fr=fr;
+    left=NULL;
+    right=NULL;
 }
 
 BNode::~BNode()
 {
-    //dtor
+
 }
 
-BNode::BNode(bool leaf)
+BNode* BNode::getLeft()
 {
+    return left;
 
 }
 
-void BNode::setValue(char c)
+BNode* BNode::getRight()
 {
-    c = c;
+    return right;
 }
 
-void BNode::setValue(int n)
+char BNode::getCh()
 {
-
+    return ch;
 }
 
-int BNode::getValueN()
+int BNode::getFr()
 {
-
+    return fr;
 }
-
-char BNode::getValueC()
+void BNode::setLeft(BNode* node)
 {
-
+  left=node;
 }
 
-void BNode::caractereFrequency()
+void BNode::setRight(BNode* node)
 {
-    int* [128];
-
-
+    right=node;
 }
-
-void BNode::readFile()
+void BNode::setFr(int fr)
 {
-
+    this->fr=fr;
 }
 
-void BNode::writeFile()
+void BNode::setCh(char ch)
 {
-
+    this->ch=ch;
 }
-
-BNode::BNode()
+bool BNode::isLeaf()
 {
-
+    return(left==NULL && right==NULL);
 }
 
-void BNode::compress(string str)
-{
 
-}
 
