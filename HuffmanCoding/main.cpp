@@ -2,7 +2,7 @@
 #include "BTree.h"
 using namespace std;
 int main() {
-string str="Funciona,eu acho!";
+string str="ab";
 BTree *t=new BTree();
 t->compact(str);
 return 0;

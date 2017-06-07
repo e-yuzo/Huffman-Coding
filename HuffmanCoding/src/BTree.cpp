@@ -47,7 +47,6 @@ BNode* BTree::Huffman(queue<BNode*>& q1)
         aux->setRight(minFrequency(q1,q2));
         aux->setLeft(minFrequency(q1,q2));
         aux->setFr(aux->getLeft()->getFr()+aux->getRight()->getFr());
-        aux->setCh('*');
         q2.push(aux);
     }
     BNode *aux=q2.front();
